@@ -6,7 +6,7 @@ $VDM_PROVIDER="virtualbox"
 $VDM_IP="192.168.0.2"
 $VDM_MOUT_DIR_VM="/vagrant"
 $VDM_MOUT_DIR_PM="."
-$VDM_CPUS="1"
+$VDM_CPUS="2"
 $VDM_MEMORY="8192"
 $VDM_INIT_BASH="sample.sh"
 
