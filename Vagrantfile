@@ -65,8 +65,10 @@ Vagrant.configure(2) do |config|
   #config.ssh.private_key_path = "~/.vagrant.d/insecure_private_key"
   #config.ssh.insert_key = false
 
+  # feat-x-s:cached os box to speed
   if Vagrant.has_plugin?("vagrant-cachier")
     # Configure cached packages to be shared between instances of the same base box.
     config.cache.scope = :box
   end
+  # feat-x-e:cached os box to speed
 end
