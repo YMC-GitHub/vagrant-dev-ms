@@ -18,8 +18,8 @@ Vagrant.configure(2) do |config|
 
   config.vm.define $VDM_MS_NAME do |dev|
     dev.vm.box = $VDM_BOX_IMAGE
-    #dev.vm.box_version = $VDM_BOX_VERSION
-    #dev.vm.box_check_update = false
+    dev.vm.box_version = $VDM_BOX_VERSION
+    dev.vm.box_check_update = false
 
     dev.vm.hostname = $VDM_MS_NAME
 
