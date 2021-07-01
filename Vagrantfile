@@ -1,22 +1,32 @@
 # cnfs
 $VDM_MS_NAME="DEV"
+
+# note-x-s:set cnf to setup machine on virtualbox
+$VDM_PROVIDER="virtualbox"
+# note-x-e:set cnf to setup machine on virtualbox
+
+# note-x-s:set cnf to set os type and version
 $VDM_BOX_IMAGE="centos/7"
 $VDM_BOX_VERSION="1804.02"
-$VDM_PROVIDER="virtualbox"
-$VDM_IP="192.168.0.2"
+# note-x-e:set cnf to set os type and version
 
-# note-x-s:mout dir cnf
-$VDM_MOUT_DIR_VM="/vagrant"
-$VDM_MOUT_DIR_PM="."
-# note-x-e:mout dir cnf
-
+# note-x-s:set cnf to set cpus and memory
 $VDM_CPUS="2"
 $VDM_MEMORY="8192"
+# note-x-e:set cnf to set cpus and memory
+
+# note-x-s:set cnf to mout dir cnf
+$VDM_MOUT_DIR_VM="/vagrant"
+$VDM_MOUT_DIR_PM="."
+# note-x-e:set cnf to mout dir cnf
 
 # note-x-s:set cnf to run a shell script to do sth
 $VDM_INIT_BASH="sample.sh"
 # note-x-e:set cnf to run a shell script to do sth
 
+# note-x-s:set cnf to do sth for other
+$VDM_IP="192.168.0.2"
+# note-x-e:set cnf to do sth for other
 
 # sams
 Vagrant.configure(2) do |config|
