@@ -4,13 +4,19 @@ $VDM_BOX_IMAGE="centos/7"
 $VDM_BOX_VERSION="1804.02"
 $VDM_PROVIDER="virtualbox"
 $VDM_IP="192.168.0.2"
+
 # note-x-s:mout dir cnf
 $VDM_MOUT_DIR_VM="/vagrant"
 $VDM_MOUT_DIR_PM="."
 # note-x-e:mout dir cnf
+
 $VDM_CPUS="2"
 $VDM_MEMORY="8192"
+
+# note-x-s:set cnf to run a shell script to do sth
 $VDM_INIT_BASH="sample.sh"
+# note-x-e:set cnf to run a shell script to do sth
+
 
 # sams
 Vagrant.configure(2) do |config|
