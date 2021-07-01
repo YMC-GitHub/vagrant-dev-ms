@@ -1,5 +1,8 @@
 # cnfs
+
+# note-x-s:set cnf to ms 's name and hostname
 $VDM_MS_NAME="DEV"
+# note-x-e:set cnf to ms 's name and hostname
 
 # note-x-s:set cnf to setup machine on virtualbox
 $VDM_PROVIDER="virtualbox"
