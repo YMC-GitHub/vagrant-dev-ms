@@ -8,7 +8,7 @@ sudo curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Ce
 fi
 
 echo "${desc_ns_s}disable fastmirror plugin"
-sed -i 's/enabled=1/enabled=0/' /etc/yum/pluginconf.d/fastestmirror.conf
+sudo sed -i 's/enabled=1/enabled=0/' /etc/yum/pluginconf.d/fastestmirror.conf
 
 echo "${desc_ns_s}yum install git"
 sudo yum install -y git
